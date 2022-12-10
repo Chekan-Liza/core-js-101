@@ -57,7 +57,7 @@ describe('02-numbers-tasks', () => {
   it.optional('getParallelepipedDiagonal should return a diagonal length of the rectangular parallepiped', () => {
     assert.equal(tasks.getParallelepipedDiagonal(1, 1, 1), Math.sqrt(3));
     assert.equal(tasks.getParallelepipedDiagonal(3, 3, 3), Math.sqrt(27));
-    assert.equal(tasks.getParallelepipedDiagonal(1, 2, 3), Math.sqrt(14));
+    assert.equal(tasks.getParallelepipedDiagonal(1, 2, 3), Math.sqrt(14).toFixed(15));
   });
 
   it.optional('roundToPowerOfTen should return an number rounded to specified power of 10', () => {
